@@ -1,20 +1,23 @@
-import React from 'react'
+import React from "react";
 import "./styles.css";
+import image from "../../assets/Woman thinking-amico.svg";
 
 export default function Home() {
   return (
     <div className="section">
-    <div className="">
-    <h1>Bem vindo de volta Thalis :D</h1>
-    <a href="/questions" className="link-home">
-      Iniciar teste
-    </a>
+      <div className="container-home">
+        <div>
+          <h1>Bem vindo de volta :D</h1>
 
-    <a href="/historic" className="link-home">
-      Consultar Histórico
-    </a>
-    
-  </div>
-  </div>
-  )
+          <img src={image} />
+        </div>
+
+        <div className="options-name">
+          <a href="/questions" className="link-home">
+            Iniciar teste
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }

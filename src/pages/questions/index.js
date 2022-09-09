@@ -4,14 +4,10 @@ import { RiTimer2Fill } from "react-icons/ri";
 import toast, { Toaster } from "react-hot-toast";
 
 import Chart from "../../components/charts";
-import {questions} from "../../Mock/questions";
 
-
+import { questions } from "../../Mock/questions";
 
 export default function Questions() {
-  const Ref = useRef(null);
-  const [timer, setTimer] = useState("00:00:00");
-
   const [showScore, setShowScore] = useState(false);
   const [responseHability, setResponseHability] = useState(false);
   const [mostraRelogioParado, setMostraRelogioParado] = useState(false);
@@ -22,13 +18,14 @@ export default function Questions() {
   const [questionsNotTime, setQuestionsNotTime] = useState(0);
   const [verificaSePerdeuTempo, setverificaSePerdeuTempo] = useState(false);
 
+  const Ref = useRef(null);
+  const [timer, setTimer] = useState("00:00:00");
+
   function getTimeRemaining(e) {
     const total = Date.parse(e) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
     const hours = Math.floor(((total / 1000) * 60 * 60) % 24);
-
-    console.log(seconds);
 
     if (seconds === 0 && !showScore) {
       toast("Tempo esgotado", {
@@ -145,8 +142,6 @@ export default function Questions() {
     { name: "Perdeu o tempo", value: questionsNotTime },
   ];
 
-
-
   return (
     <div className="section">
       {showScore ? (
@@ -159,7 +154,7 @@ export default function Questions() {
           perdeu o tempo {questionsNotTime}
           <br />
           de {questions.length} questões.
-       <Chart data={data}/>
+          <Chart data={data} />
         </div>
       ) : (
         <div className="question-box">
