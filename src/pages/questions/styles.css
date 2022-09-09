@@ -6,6 +6,18 @@
   align-items: center;
 }
 
+.instructions{
+  height: auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px 60px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
 .question-box {
   height: auto;
   width: 1000px;
@@ -134,3 +146,55 @@
   background-color: #ff5b89;
 }
 
+
+.results-box{
+ 
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.subtitile-chart-acertou{
+  width:10px;
+  height:10px;
+  background-color:#00C49F
+}
+
+.subtitile-chart-errou{
+  width:10px;
+  height:10px;
+  background-color:#db162f
+}
+
+.subtitile-chart-nao-respondeu{
+  width:10px;
+  height:10px;
+  background-color:#FFBB28
+}
+
+.subtitile-chart-passoutempo{
+  width:10px;
+  height:10px;
+  background-color: #FF8042
+}
+
+.results-text{
+
+  width:500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}

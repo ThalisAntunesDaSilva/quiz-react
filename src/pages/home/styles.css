@@ -1,47 +1,28 @@
-
 .link-home {
-    background-color: #8661c1;
-    color: #fff;
-    border-style: none;
+  background-color: #8661c1;
+  color: #fff;
+  border-style: none;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
-  
-  }
-  
-  .link-home:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: #a889db;
-  }
-
-  
-  .link-home:disabled {
-  cursor: pointer;
-  transition: 0.1s;
-  background-color: rgba(26, 26, 26, 0.2);
-  cursor: default;
-  width:auto;
-  height:40px;
 }
 
+.link-home:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #a889db;
+}
 
+.container-home {
+  height: 80vh;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-
-  .container-home{
-
-    height:80vh;
-    width:900px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-  }
-
-  .options-name{
-
- height:auto;
-display: flex;
-flex-direction: column;
-
-  }
+.options-name {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
